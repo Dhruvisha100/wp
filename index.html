@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>js-cal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+function calc()
+{
+var n1 = parseInt(document.getElementById('n1').value);
+var n2 = parseInt(document.getElementById('n2').value);
+var oper = document.getElementById('operators').value;
+var c1 = n1+n2;
+var c2 = n1-n2;
+var c3 = n1*n2;
+var c4 = n1/n2;
+
+if(oper === '+')
+{
+alert(c1);
+}
+if(oper === '-')
+{
+alert(c2);
+}if(oper === '*')
+{alert(c4);
+    }if(oper === '/')
+{
+alert(c4);}
+}
+</script>
+
+    </head>
+    <body>
+        number 1 :--<br>
+<input type="text" id="n1"/><br><br>
+<select id="operators">
+<option value="+">+<option>
+<option value="-">-<option>
+<option value="*">*<option>
+<option value="/">/<option>
+</select>
+<br><br>
+number 2 :-- <br>
+<input type="text" id="n2"/><br><br><br>
+
+<button onclick="calc();"> answer </button>
+<br><br><br>
+    </body>
+</html>
